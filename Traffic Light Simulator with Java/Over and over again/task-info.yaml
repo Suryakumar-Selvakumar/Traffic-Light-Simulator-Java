@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/traffic/Main.java
+    visible: true
+    learner_created: false
+  - name: src/system/QueueThread.java
+    visible: true
+    learner_created: false
+  - name: test/GlobalTests.java
+    visible: false
+    learner_created: false
+  - name: test/SystemOutput.java
+    visible: false
+    learner_created: false
+  - name: src/roads/Roads.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/projects/288/stages/1504/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Sep 2025 02:50:07 UTC"
+record: 5
