@@ -49,6 +49,7 @@ public class Roads {
 
         Road road = new Road(elem, isEmpty() ? "open" : "closed");
         roads[rear] = road;
+        road.distance = getDistFromCurr(road);
         rear = incrementPointer(rear);
         count++;
         System.out.printf("%s Added!\n", elem);
@@ -107,7 +108,7 @@ public class Roads {
                         road.state,
                         road.state.equals("open") ?
                                 interval - currentTime :
-                                interval * getDistFromCurr(road) - currentTime
+                                interval * road.distance - currentTime
                 );
             }
         }
@@ -159,7 +160,16 @@ public class Roads {
                 nextRoad.state = "open";
                 currRoadIdx = nextRoadIdx;
             }
+            updateDistances();
             currentTime = 0;
+        }
+    }
+
+    private void updateDistances() {
+        for (Road road : roads) {
+            if (road != null) {
+                road.distance = getDistFromCurr(road);
+            }
         }
     }
 }

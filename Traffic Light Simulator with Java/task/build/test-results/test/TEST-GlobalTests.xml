@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GlobalTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-05T00:10:05" hostname="surya" time="80.352">
+<testsuite name="GlobalTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-05T13:27:09" hostname="surya" time="80.363">
   <properties/>
-  <testcase name="start" classname="GlobalTests" time="80.352"/>
+  <testcase name="start" classname="GlobalTests" time="80.363"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Welcome to the traffic management system!
